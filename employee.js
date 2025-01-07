@@ -85,7 +85,7 @@ function updateTaskStatusAfterDelay(employeeId) {
 
 
 updateTaskStatusAfterDelay(4)
-
+// delete employee details using employeeID
 function deleteEmployee(employeeId) {
     const index = employeelist.findIndex(emp => emp.employeeid === employeeId); 
     if (index !== -1) {
