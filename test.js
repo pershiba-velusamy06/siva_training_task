@@ -7,8 +7,8 @@ let temp = a;
 a = b;
 b = temp;
 
-document.write("A="+ a);
-document.write("B="+b);
+console.log("A="+ a);
+console.log("B="+b);
 
 //Check whether the string passed is palindrome using javascript
 
@@ -38,15 +38,15 @@ palindrome("siva")
 
 
 // Write a function to reverse a string using javascript.
-function siva (text)
+function text_reverse(text)
 
 {
     const reversetext = text.split('').reverse().join("");
-    document.write(`${reversetext} is the reversed string`)
+    console.log(`${reversetext} is the reversed string`)
 }
 
 
-siva("elred")
+text_reverse("elred")
 
 //Write a program to print numbers from 1 to 30. For multiples of 3, print “Fizz” instead of the number, and for multiples of 5, print “Buzz”. For multiples of both 3 and 5, print “FizzBuzz”.
 function siva()
@@ -55,19 +55,19 @@ function siva()
     for(let i=1;i<=30;i++){
         if (i%3 ==0)
             {
-             document.write("fizz");
+                console.log("fizz");
             }
 
             else if (i%5==0)
             {
-                document.write("buzz")
+                console.log("buzz")
             }
             else if(i%3==0 && i%5==0){
-                document.write("fizzbuzz");
+                console.log("fizzbuzz");
             }
             else{
 
-                document.write(i);
+                console.log(i);
             }
 
     }
