@@ -1,0 +1,13 @@
+const express = require("express");
+const { createEmployeeController } = require("../src/Employee/controllers/employee.controllers"); 
+const { getEmployeeController } = require("../src/Employee/controllers/employee.controllers");
+const { updateDesignationController } = require("../src/Employee/controllers/employee.controllers");
+const { getEmployeeListController } = require("../src/Employee/controllers/employee.controllers");
+const { deleteEmployeeController } = require("../src/Employee/controllers/employee.controllers");
+const router = express.Router();
+router.post("/createEmployee", createEmployeeController);
+router.get("/getEmployee/:empId", getEmployeeController);
+router.patch("/updateDesignation", updateDesignationController);
+router.get("/getEmployeeList", getEmployeeListController);
+router.delete("/deleteEmployee", deleteEmployeeController);
+module.exports = router;
