@@ -10,7 +10,7 @@ mongoose.connect("mongodb://localhost:27017/employeedb", {
   useUnifiedTopology: true,
 });
 
-app.use("/employee", employeeRoutes);
+app.use("/", employeeRoutes);
 
 const PORT = 3000;
 app.listen(PORT, () => {

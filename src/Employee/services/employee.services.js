@@ -59,6 +59,6 @@ async function getEmployeeById(empId) {
     return { success: true, message: "Employee deleted successfully", result: [employee] };
   }
   
-module.exports = { createEmployee, getEmployeeById, updateEmployeeDesignation, getEmployeeList, deleteEmployee };
+module.exports = { createEmployee,generateEmpId, getEmployeeById, updateEmployeeDesignation, getEmployeeList, deleteEmployee };
   
   
